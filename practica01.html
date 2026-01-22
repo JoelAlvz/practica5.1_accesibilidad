@@ -251,11 +251,17 @@ Añadir alt-->
   </div>
 
   <div>
-    <label>¿Desea recibir información sobre nuestras promociones?</label>
-    <select id="info_promociones" name="info_promociones" onchange="showhide(this, document.getElementById('lista_promociones'))">        	    
-      <option value="si" selected="selected">SI</option>      
-      <option value="no">NO</option>      
+      <label>¿Desea recibir información sobre nuestras promociones?</label>
+      <select id="info_promociones" name="info_promociones">
+      <option value="si">SI</option>
+      <option value="no">NO</option>
     </select>
+
+    <button type="button"
+            onclick="showhide(document.getElementById('info_promociones'),
+                              document.getElementById('lista_promociones'))">
+      Aplicar
+    </button>
   </div>
 
   <div id="lista_promociones">
