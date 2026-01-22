@@ -3,12 +3,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title></title>
+<!--Añadir un title-->
+  <title>Página de compra de libros</title>
   <link rel="stylesheet" type="text/css" href="estilos.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="estilosCorrecion.css" media="all" />
 
 <script type="text/javascript">
 function showhide(control, elem){
@@ -83,7 +85,9 @@ function showhide(control, elem){
     <td><b>Eur.</b></td></tr>
   <tr class="producto">
     <td class="producto" id="id978842043022">
-	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=22012"><img src="img/978842043022.GIF" alt="" />Dónde viven los monstruos</a>
+      <!--
+Añadir alt-->
+	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=22012"><img src="img/978842043022.GIF" alt="Portada de libro" />Dónde viven los monstruos</a>
 		de SENDAK, MAURICE.</p>
 	    <p>Editorial Alfaguara: Madrid, 1995.</p>
 	    <p>ISBN: 978-84-20430-22-5 	</p></td>
@@ -93,7 +97,7 @@ function showhide(control, elem){
   </tr>
   <tr class="producto">	
   	 <td class="producto" id="id978849638856">
-	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=25924"><img src="img/978849638856.GIF" alt="" />Los tres bandidos</a>
+	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=25924"><img src="img/978849638856.GIF" alt="Portada de libro" />Los tres bandidos</a>
 		de UNGERER, TOMI.  </p>
 	    <p>Editorial Kalandraka: Sevilla 2007.</p>
 	    <p>ISBN 978-84-96388-56-7</p>
@@ -104,7 +108,7 @@ function showhide(control, elem){
   </tr>
   <tr class="producto">	
   	<td class="producto" id="id978842418108">
-	  <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=40898"><img src="img/978842418108.GIF" alt=""/>El día  en que a mamá se le puso cara de tetera</a>
+	  <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=40898"><img src="img/978842418108.GIF" alt="Portada de libro"/>El día  en que a mamá se le puso cara de tetera</a>
 	  de SAIZ, RAQUEL. </p>
 	  <p>OQO Editora: Pontevedra, 2007.</p>
 	  <p>ISBN: 978-84-96788-37-4  </p></td>
@@ -149,13 +153,14 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>Empresa </label>
+<!--For en los labels-->
+        <label for="empresa">Empresa </label>
         <input type="text" id="empresa" name="empresa" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Dirección </label>
+        <label for="dir" class="obligatorio">Dirección </label>
         <input type="text" id="dir" name="dir" />
       </div>
     </td>
@@ -163,13 +168,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Nombre </label>
+        <label for="nombre" class="obligatorio">Nombre </label>
         <input type="text" id="nombre" name="nombre" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Localidad </label>
+        <label for="localidad" class="obligatorio">Localidad </label>
         <input type="text" id="localidad" name="localidad" />
       </div>
     </td>
@@ -177,13 +182,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Apellidos </label>
+        <label for="apellidos" class="obligatorio">Apellidos </label>
         <input type="text" id="apellidos" name="apellidos" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Provincia </label>
+        <label for="provincia" class="obligatorio">Provincia </label>
         <input type="text" id="provincia" name="provincia" />
       </div>
     </td>
@@ -191,13 +196,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">e-mail </label>
+        <label for="email" class="obligatorio">e-mail </label>
         <input type="text" id="email" name="email" />
       </div>
     </td>
     <td>
     	<div class="campo_form">
-        <label class="obligatorio">CP </label>
+        <label for="cp" class="obligatorio">CP </label>
         <input type="text" id="cp" name="cp" />
       </div>
     </td>
@@ -205,13 +210,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Tlf. de contacto </label>
+        <label for="tlf" class="obligatorio">Tlf. de contacto </label>
         <input type="text" id="tlf" name="tlf" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label>Horario de entrega </label>
+        <label for="horario">Horario de entrega </label>
         <select name="horario">    
         	 <option value="all">Todo el día</option>    
         	 <option value="a">De 9:00 a 14:00 horas</option>      
@@ -223,7 +228,7 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>NIF/CIF </label>
+        <label for="nif">NIF/CIF </label>
         <input type="text" id="nif" name="nif" />
       </div>
     </td>
@@ -294,7 +299,9 @@ function showhide(control, elem){
 
   <div id="div_captcha">
     Escriba los siguientes caracteres: 
-    <img src="img/Captcha-ejemplo.jpg" alt="" width="78" height="32" />
+<!--
+Añadir alt-->
+    <img src="img/Captcha-ejemplo.jpg" alt="Cpatcha de ejemplo" width="78" height="32" />
     <input type="text" id="captcha" size="5" onblur="document.forms[0].submit()" />
   </div>
 
