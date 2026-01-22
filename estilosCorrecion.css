@@ -17,9 +17,11 @@
 .t3{
     font-weight: bold;
     color: black;
-    text-align: right;
 }
 
 #info_en{
     font-size: medium;
+}
+p{
+    text-align: right;
 }
