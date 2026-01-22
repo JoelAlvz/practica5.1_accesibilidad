@@ -2,6 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Añadir un idioma correcto-->
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
@@ -254,45 +255,47 @@ Añadir alt-->
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom" id="prom" value="hispanoamericana">
-        <label>Literatura hispano americana </label>
+        <!--For en los labels y id iguales en los inputs-->
+        <input type="checkbox" name="prom" id="promHispana" value="hispanoamericana">
+        <label for="promHispana">Literatura hispano americana </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="extranjera">
-        <label>Literatura extanjera </label>
+        <input type="checkbox" name="prom" id="promExtranjera" value="extranjera">
+        <label for="promExtranjera">Literatura extanjera </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="clasicosespannoles">
-        <label>Clásicos españoles</label> </div>
+        <input type="checkbox" name="prom" id="promClasicosEsp" value="clasicosespannoles">
+        <label for="promClasicosEsp">Clásicos españoles</label> </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="clasicosmundiales">
-        <label>Clásicos mundiales </label>
+        <input type="checkbox" name="prom"  id="promClasicosMun" value="clasicosmundiales">
+        <label for="promClasicosMun">Clásicos mundiales </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="biografia">
-        <label>Biografía</label>
+        <input type="checkbox" name="prom"  id="promBio" value="biografia">
+        <label for="promBio">Biografía</label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="comic"> 
-        <label>Cómic y novela gráfica </label>
+        <input type="checkbox" name="prom"  id="promComic" value="comic"> 
+        <label for="promComic">Cómic y novela gráfica </label>
       </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="infantil">
-        <label>Literatura infantil </label>
+        <input type="checkbox" name="prom"  id="promInfantil" value="infantil">
+        <label for="promInfantil">Literatura infantil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="juvenil">
-        <label>Literatura juvenil </label>
+        <input type="checkbox" name="prom"  id="promJuvenil" value="juvenil">
+        <label for="promJuvenil">Literatura juvenil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="tecnico">
-        L<label>ibro técnico</label> </div>
+        <input type="checkbox" name="prom"  id="promTecnico" value="tecnico">
+        <!--Letra fuera de etiqueta-->
+        <label for="promTecnico">Libro técnico</label> </div>
     </div>
 
   </div>
