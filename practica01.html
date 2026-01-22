@@ -55,7 +55,7 @@ function showhide(control, elem){
 <strong>Paso:</strong><img src="img/1.png" alt="" /><img src="img/2on.png" alt="" width="63" height="42" /><img src="img/3.png" alt="" width="85" height="42" /></div>
 
 <div id="imprimir">
-  <a href="javascript:print()" ><img src="img/iconPrint.gif" width="20" alt="Imprimir" />
+  <a href="javascript:print()" ><img src="img/iconPrint.gif" width="20" alt="Impresión" />
   Imprimir</a>
 </div>
 
@@ -226,7 +226,7 @@ Añadir alt-->
     <td>
       <div class="campo_form">
         <label for="horario">Horario de entrega </label>
-        <select name="horario">    
+        <select name="horario" id="horario">    
         	 <option value="all">Todo el día</option>    
         	 <option value="a">De 9:00 a 14:00 horas</option>      
         	 <option value="b">De 14:00 a 19:00 horas</option>      
@@ -251,7 +251,7 @@ Añadir alt-->
   </div>
 
   <div>
-      <label>¿Desea recibir información sobre nuestras promociones?</label>
+      <label for="info_promociones">¿Desea recibir información sobre nuestras promociones?</label>
       <select id="info_promociones" name="info_promociones">
       <option value="si">SI</option>
       <option value="no">NO</option>
@@ -269,6 +269,7 @@ Añadir alt-->
 
     <div class="grupo_check">
       <fieldset>
+        <legend hidden>Grupo 1</legend>
       <div>
         <!--For en los labels y id iguales en los inputs-->
         <input type="checkbox" name="prom" id="promHispana" value="hispanoamericana">
@@ -286,6 +287,7 @@ Añadir alt-->
 
     <div class="grupo_check">
       <fieldset>
+        <legend hidden>Grupo 2</legend>
       <div>
         <input type="checkbox" name="prom"  id="promClasicosMun" value="clasicosmundiales">
         <label for="promClasicosMun">Clásicos mundiales </label>
@@ -303,6 +305,7 @@ Añadir alt-->
 
     <div class="grupo_check">
       <fieldset>
+        <legend hidden>Grupo 3</legend>
       <div>
         <input type="checkbox" name="prom"  id="promInfantil" value="infantil">
         <label for="promInfantil">Literatura infantil </label>
