@@ -16,5 +16,9 @@
 
 .t3{
     font-weight: bold;
-    color: grey;
+    color: black;
+}
+
+#info_en{
+    font-size: medium;
 }
