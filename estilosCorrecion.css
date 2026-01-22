@@ -23,5 +23,9 @@
     font-size: medium;
 }
 p{
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: right;
+>>>>>>> d4e64e0f5148a325c0cf263e0bd8c3281fe13e64
 }
